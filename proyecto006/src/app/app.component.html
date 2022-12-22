@@ -1,0 +1,13 @@
+<table border="1">
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Stock</th>
+    </tr>
+    <tr *ngFor="let articulo of articulos">
+      <td>{{articulo.codigo}}</td>
+      <td>{{articulo.descripcion}}</td>
+      <td>{{articulo.precio}}</td>
+    </tr>
+
+  </table>
