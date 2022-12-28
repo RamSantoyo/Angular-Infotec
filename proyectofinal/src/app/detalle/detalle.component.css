@@ -1,0 +1,53 @@
+/*espacio en las orillas de la pagina*/
+.contenedor {
+    margin: 0 8rem;
+}
+.producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 1rem;
+    padding: 3rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/*posicionamiento hacia abajo con flex*/
+.elementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.botoncomprar{
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-size: bold;
+    padding: 3rem;
+}

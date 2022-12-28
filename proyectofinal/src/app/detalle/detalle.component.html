@@ -1,0 +1,14 @@
+<a routerLink="/productos">Volver</a>
+
+<div class="contenedor">
+    <div class="producto">
+        <!-- imagen desde angular -->        
+        <img src="./assets/{{id}}.jpg" alt="imagen" />
+        <div class="elementos">
+            <input type="number" placeholder="Cantidad" />
+            <h1>{{desc}}</h1>
+            <h2>${{precio}}</h2>
+            <button class="botoncomprar">Añadir al carrito</button>
+        </div>
+    </div>
+</div>

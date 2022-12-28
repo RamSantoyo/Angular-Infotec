@@ -1,0 +1,26 @@
+<p>Nombre del cliente: {{nombre}}</p>
+<p>Nombre del cliente en mayusculas {{nombre | uppercase}}</p>
+<p>Nombre del cliente en minusculas {{nombre | lowercase}}</p>
+<p>El saldo es: {{saldo | currency:'USD':true}}</p>
+<p>Dias de vencimiento: {{dias | slice:0:2}}</p>
+<p>Articulos de la tienda: {{articulos | json}}</p>
+<p>Fecha actual: {{fecha | date:'dd/MM/yyyy'}}</p>
+
+<h1>Numeros a Texto</h1>
+<br>
+<h2>Numeros en Español</h2>
+<ul>
+  <li *ngFor="let valor of vector">{{valor | letras:'es'}}</li>
+</ul>
+
+<h2>Numeros en Ingles</h2>
+<br>
+<ul>
+  <li *ngFor="let valor of vector">{{valor | letras:'en'}}</li>
+</ul>
+
+<h2>Numeros en Portugues</h2>
+<br>
+<ul>
+  <li *ngFor="let valor of vector">{{valor | letras:'pt'}}</li>
+</ul>

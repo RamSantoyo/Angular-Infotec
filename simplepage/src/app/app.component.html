@@ -1,0 +1,130 @@
+<header>
+  <div class="barra">
+    <div class="nav contenedor">
+      <div class="nav-left">
+        <a class="nav-item" routerLink="/home">
+          Blog <p>Ramsess</p>
+        </a>
+      </div>
+      <div class="nav-right">
+        <a class="navgation" routerLink="/home">Home</a>
+        <a class="navgation" routerLink="/about">About</a>
+        <a class="navgation" routerLink="/Signin" (click)="pop()">Sign in</a>
+      </div>
+    </div>    
+  </div>
+  <div [ngClass]="active == 1 ? 'activo' : 'pop-up'">
+    <div class="pop-up-contenedor" (click)="pop()">
+      <div class="pop-up-contenido">
+        <h2>Sign in</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+          </div>
+          <div class="boton-log">
+            <button type="submit">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="imagen-fondo">
+  <div class="texto-imagen">
+    <h1>Blog Ramsess</h1>
+    <p>Un blog de tecnología</p>
+  </div>      
+</div>
+<h1 class="encabezado">Noticias Impórtantes</h1>
+<section class="blog contenedor">  
+  <article>    
+    <div class="tarjeta">
+      <div class="tarjeta-imagen">
+        <img src="https://picsum.photos/200/300" alt="">
+      </div>
+      <div class="tarjeta-contenido">
+        <h2>Titulo de la tarjeta</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam molestiae sunt? Ullam totam nemo recusandae corrupti eos molestiae. Quam fugit incidunt, inventore perspiciatis neque quos cumque alias soluta ullam.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo suscipit ab nisi ad iure iste dicta, nemo inventore libero alias tenetur similique consequatur et eius aspernatur consequuntur quis porro!
+        </p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="tarjeta-imagen">
+        <img src="https://picsum.photos/200/300" alt="">
+      </div>
+      <div class="tarjeta-contenido">
+        <h2>Titulo de la tarjeta</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam molestiae sunt? Ullam totam nemo recusandae corrupti eos molestiae. Quam fugit incidunt, inventore perspiciatis neque quos cumque alias soluta ullam.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo suscipit ab nisi ad iure iste dicta, nemo inventore libero alias tenetur similique consequatur et eius aspernatur consequuntur quis porro!
+        </p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="tarjeta-imagen">
+        <img src="https://picsum.photos/200/300" alt="">
+      </div>
+      <div class="tarjeta-contenido">
+        <h2>Titulo de la tarjeta</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam molestiae sunt? Ullam totam nemo recusandae corrupti eos molestiae. Quam fugit incidunt, inventore perspiciatis neque quos cumque alias soluta ullam.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo suscipit ab nisi ad iure iste dicta, nemo inventore libero alias tenetur similique consequatur et eius aspernatur consequuntur quis porro!
+        </p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+  </article>
+
+  <div>
+    <aside>
+      <div class="card-aside">
+        <h2>Sorteo</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam molestiae sunt? Ullam totam nemo recusandae corrupti eos molestiae. Quam fugit incidunt, inventore perspiciatis neque quos cumque alias soluta ullam.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo suscipit ab nisi ad iure iste dicta, nemo inventore libero alias tenetur similique consequatur et eius aspernatur consequuntur quis porro!
+        </p>
+        <button>Mas infirmación</button>
+      </div>
+      <div class="card-aside">
+        <h2>Curso</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam molestiae sunt? Ullam totam nemo recusandae corrupti eos molestiae. Quam fugit incidunt, inventore perspiciatis neque quos cumque alias soluta ullam.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo suscipit ab nisi ad iure iste dicta, nemo inventore libero alias tenetur similique consequatur et eius aspernatur consequuntur quis porro!
+        </p>
+        <button>Mas infirmación</button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <div class="footer">
+      <div class="footer-texto">
+        <h2>Blog Ramsess</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+      </div>
+      <div class="footer-texto">
+        <h2>Redes Sociales</h2>
+        <!-- todos los derechos resrvados-->
+        <p class="copy">Blog Ramsess &copy; 2023</p>
+      </div>
+    </div>
+  </div> 
+</footer>

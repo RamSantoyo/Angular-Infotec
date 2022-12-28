@@ -1,0 +1,34 @@
+<div class="productos">
+    <h1>Productos</h1>    
+      <ng-template #sinarticulos><p>No hay articulos.</p></ng-template>
+      <div>
+        <p>
+          <label *ngIf="hayRegistros()">Codigo:</label>
+          <input type="number" [(ngModel)]="art.codigo" />
+        </p>
+        <p>
+          <label *ngIf="hayRegistros()">Descripcion:</label>
+          <input type="text" [(ngModel)]="art.descripcion" />
+        </p>
+        <p>
+          <label *ngIf="hayRegistros()">Precio:</label>
+          <input type="number" [(ngModel)]="art.precio" />
+        </p>            
+        <p><button (click)="agregar()">Agregar</button>
+        <button (click)="modificar()">Modificar</button></p>
+      </div>
+
+      <div class="producto" border="1" *ngIf="hayRegistros(); else sinarticulos">
+        <div class="card" *ngFor="let art of articulos">
+          <img src="./assets/{{art.codigo}}.jpg" alt="imagen">
+          <div class="container">
+            <h4><b>{{art.descripcion}}</b></h4>
+            <p>{{art.precio}}</p>
+            <button (click)="borrar(art.codigo)" class="delete">Borrar</button>
+            <button (click)="seleccionar(art)" class="danger">Seleccionar</button>
+            <a [routerLink]="['/detalle', art.codigo, art.descripcion, art.precio]">Comprar</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  
